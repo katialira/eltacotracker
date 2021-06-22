@@ -1,0 +1,156 @@
+---
+title: elTacoTracker
+layout: default
+section_id: home
+skills:
+  - title: Everyone
+    percent: 12
+  - title: DevTeam
+    percent: 8
+  - title: Growth
+    percent: 2
+  - title: Ops
+    percent: 2
+works:
+  - image: images/tacos/cass_01.jpg
+    title: Cass
+    desc: "Dev Team"
+  - image: images/tacos/chris_01.jpg
+    title: Chris
+    desc: "Dev Team"
+  - image: images/tacos/guy_01.jpg
+    title: Guy
+    desc: "Dev Team"
+  - image: images/tacos/katia_01.jpg
+    title: Katia
+    desc: "Dev Team"
+  - image: images/tacos/pierre_01.jpg
+    title: Pierre
+    desc: "Growth"
+  - image: images/tacos/cass_02.jpg
+    title: Cass
+    desc: "Dev Team"
+  - image: images/tacos/chris_02.jpg
+    title: Chris
+    desc: "Dev Team"
+  - image: images/tacos/guy_02.jpg
+    title: Guy
+    desc: "Dev Team"
+  - image: images/tacos/pierre_02.jpg
+    title: Pierre
+    desc: "Growth"
+  - image: images/tacos/katia_02.jpg
+    title: Katia
+    desc: "Dev Team"
+  - image: images/tacos/katia_03.jpg
+    title: Katia
+    desc: "Dev Team"
+  - image: images/tacos/laura_01.jpg
+    title: Laura
+    desc: "Ops Team"
+  - image: images/tacos/katia_04.jpg
+    title: Katia
+    desc: "Dev Team"
+  - image: images/tacos/gab_01.jpg
+    title: Gab
+    desc: "Dev Team"
+  - image: images/tacos/sara_01.jpg
+    title: Sara
+    desc: "Growth Team"
+  - image: images/tacos/chris_03.jpg
+    title: Chris
+    desc: "Dev Team"
+  - image: images/tacos/cass_03.jpg
+    title: Cass
+    desc: "Dev Team"
+  - image: images/tacos/charles_01.jpg
+    title: Charles
+    desc: "Dev Team"
+  - image: images/tacos/colin_01.jpg
+    title: Colin
+    desc: "Dev Team"
+  - image: images/tacos/naoufel_01.jpg
+    title: Naoufel
+    desc: "Ops Team"
+  - image: images/tacos/amanda_01.jpg
+    title: Amanda
+    desc: "Ops Team"
+  - image: images/tacos/amanda_02.jpg
+    title: Amanda
+    desc: "Ops Team"
+  - image: images/tacos/pierre_03.jpg
+    title: Pierre
+    desc: "Growth"
+  - image: images/tacos/colin_02.jpg
+    title: Colin
+    desc: "Dev Team"
+  - image: images/tacos/guy_03.jpg
+    title: Guy
+    desc: "Dev Team"
+  - image: images/tacos/pierre_04.jpg
+    title: Pierre
+    desc: "Growth"
+  - image: images/tacos/chris_04.jpg
+    title: Chris
+    desc: "Dev Team"
+  - image: images/tacos/pierre_05.jpg
+    title: Pierre
+    desc: "Growth"
+  - image: images/tacos/gab_02.jpg
+    title: Gab
+    desc: "Dev Team"
+  - image: images/tacos/pierre_06.jpg
+    title: Pierre
+    desc: "Growth"
+  - image: images/tacos/chris_05.jpg
+    title: Chris
+    desc: "Dev Team"
+  - image: images/tacos/pierre_07.jpg
+    title: Pierre
+    desc: "Growth"
+  - image: images/tacos/vincent_01.jpg
+    title: Pierre
+    desc: "Growth"
+  - image: images/tacos/katia_05.jpg
+    title: Katia
+    desc: "Dev Team"
+  - image: images/tacos/guy_04.jpg
+    title: Guy
+    desc: "Dev Team"
+  - image: images/tacos/rola_01.jpg
+    title: Rola
+    desc: "Dev Team"
+  - image: images/tacos/colin_03.jpg
+    title: Colin
+    desc: "Dev Team"
+  - image: images/tacos/chris_06.jpg
+    title: Chris
+    desc: "Dev Team"
+  - image: images/tacos/amanda_03.jpg
+    title: Amanda
+    desc: "Ops Team"
+  - image: images/tacos/katia_06.jpg
+    title: Katia
+    desc: "Dev Team"
+  - image: images/tacos/mitchell_01.jpg
+    title: Mitchell
+    desc: "Dev Team"
+---
+
+<div class='mod modMasonryGallery'>
+  <ul class='gallery'>
+    {% for work in page.works %}
+      <li class='{{work.class}}'>
+        <a href='portfolio-item.html'>
+          <img alt="" src="{{work.image}}" />
+          <div class='overlay'>
+            <div class='thumb-info'>
+              <h3>{{work.title}}</h3>
+              <p>{{work.desc}}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
